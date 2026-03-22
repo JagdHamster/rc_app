@@ -19,7 +19,7 @@ services:
     build: ./backend
     environment:
       NODE_ENV: production
-      POSTGRES_HOST: postgres      # ← имя сервиса, не localhost!
+      POSTGRES_HOST: postgres
       POSTGRES_PORT: 5432
       POSTGRES_USERNAME: ${POSTGRES_USERNAME:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secret}
